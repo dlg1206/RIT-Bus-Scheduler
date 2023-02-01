@@ -111,10 +111,10 @@ function parseRoutes(source, regex, callback){
  *
  * @returns {Promise<{semesters: *[], "last-loaded": number}>}
  */
-async function reloadCache() {
+export async function reloadCache() {
     // Reset Cache
     let cache = {
-        'last-loaded': Date.now(),
+        'lastLoaded': Date.now(),
         'semesters': []
     };
 
@@ -142,7 +142,7 @@ async function reloadCache() {
                     // Get all the stops for the route
                     routeHTML.match(new RegExp(REGEX.STOP, "g")).forEach((match) => {
                         stops.push({
-                            "stop-name": match.match(new RegExp(REGEX.STOP))[1],
+                            "stopName": match.match(new RegExp(REGEX.STOP))[1],
                             "times": []
                         });
                     });
@@ -166,9 +166,9 @@ async function reloadCache() {
 
                 // New Semester Route
                 return {
-                    "route-name": match[2],
+                    "routeName": match[2],
                     "source": ROOT + match[1],
-                    "png-source": ROOT + pngPath,
+                    "pngSource": ROOT + pngPath,
                     "stops": stops
                 };
             })
@@ -179,8 +179,9 @@ async function reloadCache() {
 }
 const cache = await reloadCache().then((cache) => {
     console.log("Schedules Loaded");
-    console.log(cache)
+    // console.log(cache)
     return cache;
 });
 export default cache;
+
 

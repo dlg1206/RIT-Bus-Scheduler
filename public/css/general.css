@@ -99,7 +99,7 @@ table{
 
 td{
     padding: .5em .5em;
-    border-style: solid;
+    /*border-style: solid;*/
 }
 
 .route-container .route-name a{

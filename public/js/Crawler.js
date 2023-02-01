@@ -109,7 +109,7 @@ function parseRoutes(source, regex, callback){
 /**
  * Reloads the Cached Bus Details
  *
- * @returns {Promise<{semesters: *[], "last-loaded": number}>}
+ * @returns {Promise<{lastLoaded: number, semesters: *[]}>}
  */
 export async function reloadCache() {
     // Reset Cache
@@ -177,11 +177,5 @@ export async function reloadCache() {
 
     return cache;
 }
-const cache = await reloadCache().then((cache) => {
-    console.log("Schedules Loaded");
-    // console.log(cache)
-    return cache;
-});
-export default cache;
 
 

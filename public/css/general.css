@@ -69,9 +69,7 @@ footer{
     margin-bottom: 20px;
 }
 
-/*div{*/
-/*    border-style: solid;*/
-/*}*/
+
 
 /*CSS Classes*/
 .row {
@@ -83,69 +81,84 @@ footer{
     margin: auto;
 }
 
-.shuttle-container{
+.route-container{
     display: inline-block;
     width: 40%;
     padding: .5em;
 }
 
-.shuttle-container table{
-    /*border: solid 2px black;*/
+.route-container table{
+    border: solid;
     width: 100%;
     border-collapse: collapse;
     /*justify-content: center;*/
 }
 
-.shuttle-container tr:nth-child(odd) {
+.route-container tr:nth-child(odd) {
     background-color: #D0D3D4;
 }
 
-.shuttle-container td{
+.route-container td{
     padding: .5em .5em;
     /*border-style: solid;*/
 }
 
-.shuttle-container .shuttle-name a{
+.route-container .route-name a{
     font-weight: bold;
     text-decoration: none;
     color: black;
     width: 40%;
 }
-.shuttle-container .shuttle-status{
+.route-container .route-status{
     width: 20%;
 }
-.shuttle-container .shuttle-status div{
+.route-container .route-status div{
     text-align: center;
-    border-style: solid;
+    border: black solid 1px;
     border-radius: 25px;
-    border-width: 1px;
-    border-color: black;
     padding: 5px;
 }
 
-.shuttle-container .shuttle-status .active {
+.route-container .route-status .active {
     background-color: #84BD00;
 }
 
-.shuttle-container .shuttle-status .inactive {
+.route-container .route-status .inactive {
     background-color: #DA291C;
 }
 
-.shuttle-container .location{
+.route-container .location{
     width: 40%;
 }
 
-.shuttle-container .location .inactive{
+.route-container .location .inactive{
     text-align: center;
     font-weight: bold;
     padding: 1.5em;
 }
 
+/*div{*/
+/*    border-style: solid;*/
+/*}*/
 
-
-
-
-.planner-container{
+.route-details-container{
     display: inline-block;
-    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
 }
+
+.route-details-container .route-name{
+    text-align: center;
+    border: black solid;
+    color: white;
+    background: #F76902;
+    padding: 1em;
+    margin: .25em;
+
+}
+
+.route-details-container img{
+
+}
+

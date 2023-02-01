@@ -87,20 +87,19 @@ footer{
     padding: .5em;
 }
 
-.route-container table{
+table{
     border: solid;
     width: 100%;
     border-collapse: collapse;
-    /*justify-content: center;*/
 }
 
 .route-container tr:nth-child(odd) {
     background-color: #D0D3D4;
 }
 
-.route-container td{
+td{
     padding: .5em .5em;
-    /*border-style: solid;*/
+    border-style: solid;
 }
 
 .route-container .route-name a{
@@ -159,6 +158,6 @@ footer{
 }
 
 .route-details-container img{
-
+    width: 100%;
 }
 

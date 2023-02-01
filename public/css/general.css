@@ -89,55 +89,48 @@ div{
     padding: .5em;
 }
 
-#shuttle-info-container{
-    /*display: flex;*/
+.shuttle-container table{
+    /*border: solid 2px black;*/
+    width: 100%;
+    /*height: 100%;*/
+    border-collapse: collapse;
     /*justify-content: center;*/
 }
-#shuttle-info-table{
-    width: 100%;
-    border-collapse: collapse
+
+.shuttle-container tr:nth-child(odd) {
+    background-color: #D0D3D4;
 }
 
-#shuttle-info-table td{
+.shuttle-container td{
     padding: .5em .5em;
+    border-style: solid;
 }
 
-tr:nth-child(even) {background-color: #D0D3D4;}
-
-.shuttle-info .shuttle-name{
+.shuttle-container .shuttle-name a{
     font-weight: bold;
-
-}
-
-.shuttle-info .shuttle-name a {
     text-decoration: none;
     color: black;
 }
-.shuttle-info .shuttle-name a:hover{
-    color: black;
-}
 
-.shuttle-info .shuttle-status{
+.shuttle-container .shuttle-status{
     text-align: center;
+    border-style: solid;
     border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
     padding: 5px;
 }
 
-.shuttle-info .active {
+.shuttle-container .active {
     background-color: #84BD00;
 }
 
-.shuttle-info .inactive {
+.shuttle-container .inactive {
     background-color: #DA291C;
 }
 
 
 
-
-
-.light-gray{
-    background-color: #A2AAAD;
-}
 
 
 

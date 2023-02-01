@@ -1,0 +1,147 @@
+
+/*
+RIT Colors
+https://www.rit.edu/brandportal/colors
+orange: #F76902
+white: #FFFFFF
+black: #000000
+Light Gray: #D0D3D4
+MEd Gray: #A2AAAD
+Dark Gray: #7C878E
+
+*/
+/*
+attribute
+.class - apply css to class (class="foo")
+#id - apply css to id (id="bar")
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* Generic */
+
+
+body{
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans‑serif;
+    margin: 0;
+}
+
+main{
+    margin: 1em 1em;
+}
+
+/*Header Details*/
+header{
+    background-color: #F76902;
+    padding: .5em;
+    color: white;
+
+}
+
+
+/*Footer Details*/
+footer{
+    background-color: black;
+    color: white;
+    font-size: small;
+}
+
+.footer-link-box a {
+    color: #A2AAAD;
+}
+.footer-link-box a:hover{
+    color: #A2AAAD;
+}
+
+.footer-link-box ul{
+    list-style: none;
+    text-align: left;
+}
+
+.footer-link-box li{
+    margin-top: 10px;
+}
+
+.footer-link-box li.title{
+    margin-bottom: 20px;
+}
+
+div{
+    border-style: solid;
+}
+
+/*CSS Classes*/
+.row {
+    display: flex;
+}
+
+.column {
+    display: inline-block;
+    margin: auto;
+}
+
+.shuttle-container{
+    display: inline-block;
+    width: 40%;
+    padding: .5em;
+}
+
+#shuttle-info-container{
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+#shuttle-info-table{
+    width: 100%;
+    border-collapse: collapse
+}
+
+#shuttle-info-table td{
+    padding: .5em .5em;
+}
+
+tr:nth-child(even) {background-color: #D0D3D4;}
+
+.shuttle-info .shuttle-name{
+    font-weight: bold;
+
+}
+
+.shuttle-info .shuttle-name a {
+    text-decoration: none;
+    color: black;
+}
+.shuttle-info .shuttle-name a:hover{
+    color: black;
+}
+
+.shuttle-info .shuttle-status{
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.shuttle-info .active {
+    background-color: #84BD00;
+}
+
+.shuttle-info .inactive {
+    background-color: #DA291C;
+}
+
+
+
+
+
+.light-gray{
+    background-color: #A2AAAD;
+}
+
+
+
+.planner-container{
+    display: inline-block;
+    width: 60%;
+}

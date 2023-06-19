@@ -27,6 +27,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header
     --light-gray: #D0D3D4;
     --med-gray: #A2AAAD;
     --dark-gray: #7C878E;
+    --light-gray-accent: #D7D2CB;
 }
 
 /* Generic */
@@ -35,6 +36,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header
 body{
     font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans‑serif;
     margin: 0;
+}
+
+hr.vertical {
+    /*border-left: 2px solid black;*/
+    /*width:0;*/
+    border:2px solid black;
+    position: absolute;
 }
 
 /*main{*/
@@ -86,6 +94,13 @@ header{
 
 .nav-tab:hover{
     background-color: var(--dark-gray);
+}
+
+/* Shuttle Status */
+.shuttle-status{
+    border: 1px solid black;
+    height: 6.25em;
+    width: 100%;
 }
 
 

@@ -1,7 +1,7 @@
 // 1. Get Bus Schedule - Schedules.html
 // 3. Fastest way to a to b - planner
 // Routes
-import {reloadCache} from "./Crawler.js";
+import {reloadCache} from "./crawler.js";
 
 function getAllSemesterNames(){
     let dropdown = document.getElementById("semester-dropdown");

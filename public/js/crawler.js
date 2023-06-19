@@ -1,5 +1,5 @@
 /**
- * File: Crawler.js
+ * File: crawler.js
  * Description: Scrapes the RIT Shuttle Website to get Shuttle Info
  *
  * @author Derek Garcia

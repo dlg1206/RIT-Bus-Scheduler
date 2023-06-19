@@ -19,6 +19,14 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header
 */
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --orange: #F76902;
+    --light-gray: #D0D3D4;
+    --med-gray: #A2AAAD;
+    --dark-gray: #7C878E;
 }
 
 /* Generic */
@@ -29,17 +37,55 @@ body{
     margin: 0;
 }
 
-main{
-    margin: 1em 1em;
-}
+/*main{*/
+/*    margin: 1em 1em;*/
+/*}*/
 
 /*Header Details*/
 header{
-    background-color: #F76902;
-    padding: .5em;
+    background-color: var(--orange);
+    height: 5em;
+    padding: 1em;
     color: white;
-    height: 100px;
+    border-bottom: solid black;
+}
 
+/*Nav bar*/
+
+.nav-dropdown{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: var(--med-gray);
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("../assets/dropdown.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-appearance:none;
+}
+
+.nav-tab{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: black;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    width: 25%;
+    transition-duration: 0.4s;
+}
+
+.nav-tab:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav-tab:hover{
+    background-color: var(--dark-gray);
 }
 
 
@@ -48,16 +94,16 @@ footer{
     background-color: black;
     color: white;
     position: fixed;
+    padding: 1em;
     bottom: 0;
     width: 100%;
-    /*height: 150px;*/
 }
 
 .footer-link-box a {
-    color: #A2AAAD;
+    color: var(--med-gray);
 }
 .footer-link-box a:hover{
-    color: #A2AAAD;
+    color: var(--med-gray);
 }
 
 .footer-link-box ul{
@@ -66,11 +112,11 @@ footer{
 }
 
 .footer-link-box li{
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 
 .footer-link-box li.title{
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 
@@ -81,7 +127,6 @@ footer{
 
 .column {
     display: inline-block;
-    /*margin: auto;*/
 }
 
 .horiz-center{

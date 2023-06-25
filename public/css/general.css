@@ -20,6 +20,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -37,10 +38,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header
 /* Generic */
 
 
-body{
+html, body{
     font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans‑serif, serif;
-    margin: 0;
 }
+
+
 
 hr.vertical {
     /*border-left: 2px solid black;*/
@@ -50,7 +52,7 @@ hr.vertical {
 }
 
 /*main{*/
-/*    margin: 1em 1em;*/
+/*    height: 100%;*/
 /*}*/
 
 /*Header Details*/
@@ -149,6 +151,7 @@ footer{
 /*CSS Classes*/
 .row {
     display: flex;
+    /*border: 1px solid red;*/
 }
 
 .column {
@@ -160,7 +163,7 @@ footer{
 }
 
 /*div {*/
-/*    border-style: solid;*/
+/*    border: 1px solid red;*/
 /*}*/
 
 .rotate-centered {

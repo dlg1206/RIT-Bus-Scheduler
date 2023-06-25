@@ -24,17 +24,21 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header
 
 :root {
     --orange: #F76902;
+    --green: #84BD00;
+    --cyan: #009CBD;
+    --red: #DA291C;
     --light-gray: #D0D3D4;
     --med-gray: #A2AAAD;
     --dark-gray: #7C878E;
     --light-gray-accent: #D7D2CB;
+    --dark-gray-accent: #ACA39A;
 }
 
 /* Generic */
 
 
 body{
-    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans‑serif;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans‑serif, serif;
     margin: 0;
 }
 
@@ -151,3 +155,9 @@ footer{
 /*div {*/
 /*    border-style: solid;*/
 /*}*/
+
+.rotate-centered {
+    margin: .5em;
+    transform: scale(-1);
+    writing-mode: vertical-lr;
+}

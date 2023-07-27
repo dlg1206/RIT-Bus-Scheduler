@@ -37,7 +37,7 @@ async function getHTMLString(url){
         .catch( () => {
             console.warn("Failed to get resource at " + url);
             return null;
-        })
+        });
 
     // Return null if no response
     if(response === null)
@@ -50,7 +50,7 @@ async function getHTMLString(url){
         .catch( () => {
             console.warn("Failed to get html at " + url);
             return null;
-        })
+        });
 }
 
 

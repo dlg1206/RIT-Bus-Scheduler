@@ -167,7 +167,7 @@ footer{
 /*}*/
 
 .rotate-centered {
-    margin: .5em;
+    /*margin: .5em;*/
     transform: scale(-1);
     writing-mode: vertical-lr;
 }

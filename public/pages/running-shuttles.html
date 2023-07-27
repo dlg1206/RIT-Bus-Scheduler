@@ -7,7 +7,7 @@
     <link href="../css/general.css" rel="stylesheet">
 
 </head>
-<body >
+<body>
 <header>
     <h1 style="font-size: 45px;">RIT Bus Scheduler</h1>
 </header>
@@ -38,135 +38,74 @@
     </div>
 
     <!--Shuttle Container-->
-    <div class="row" style="align-items: stretch;">
+    <div>
         <!--Shuttle Details-->
         <div style="width: 40%">
             <!--Shuttle 1-->
-            <div class="grow" style="margin: 1em; border: 1px solid black;">
-                <table id="route-table">
+            <div class="grow" style="margin: 1em; border: 1px solid black; display: flex; ">
+                <div style="text-align: center; border-right: 1px solid black; width:25%; background-color:var(--med-gray)">
+                    <p style="padding: .1em;background-color: var(--green);">On Duty</p>
+                    <h3 style="padding: .5em;">Off Campus Express</h3>
+                </div>
 
-                </table>
-
-                <div class="row">
-                    <div style="width: 5%; background-color: var(--green); ">
-                        <p class="rotate-centered" style="font-size: large">On Duty</p>
+                <div style=" display: flex; width: 100%; align-items: center;">
+                    <div style="text-align: center; margin: 1em;width: 30%">
+                        <p style="font-weight: bold">Wegmans West</p>
+                        <p>7:00 am</p>
                     </div>
 
-                    <div style="width: 25%; background-color: var(--med-gray); text-align: center; display: flex; ">
-                        <h2 style="margin: auto">Off Campus Express</h2>
+                    <div style=" width: 70%;">
+                        <div style="background-color: var(--red); margin-bottom: .5em">
+                            <div style="background-color: var(--green); width: 85%; min-height: 1em;">
+                            </div>
+                        </div>
+
+                        <p style="text-align: center">Arrives in 1 minute</p>
                     </div>
 
-                    <div class="row" style="width: 70%;">
-                        <div style="text-align: center; margin: auto auto auto 1em; width: 20%">
-                            <p style="font-weight: bold">Wegmans West</p>
-                            <p>7:00 am</p>
+
+                    <div style="text-align: center; margin: 1em;width: 30% ">
+                        <p style="font-weight: bold">Walmart West</p>
+                        <p>7:03 am</p>
+                    </div>
+                </div>
+            </div>
+            <!--Shuttle 2-->
+            <div class="grow" style="margin: 1em; border: 1px solid black; display: flex; ">
+                <div style="text-align: center; border-right: 1px solid black; width:25%; background-color:var(--med-gray)">
+                    <p style="padding: .1em;background-color: var(--green);">On Duty</p>
+                    <h3 style="padding: .5em;">6 175 Jefferson - Park Point - Province</h3>
+                </div>
+
+                <div style=" display: flex; width: 100%; align-items: center;">
+                    <div style="text-align: center; margin: 1em; width: 30%">
+                        <p style="font-weight: bold">6 175 Jefferson - Park Point - Province</p>
+                        <p>7:00 am</p>
+                    </div>
+
+                    <div style=" width: 70%;">
+                        <div style="background-color: var(--red); margin-bottom: .5em">
+                            <div style="background-color: var(--green); width: 85%; min-height: 1em;">
+                            </div>
                         </div>
 
+                        <p style="text-align: center">Arrives in 1 minute</p>
+                    </div>
 
-                        <div style="background-color: var(--red);height:20%; width: 80%; margin: auto 1em; border: 1px solid black;">
-                            <div style="background-color: var(--green); height:100%;width:20%; margin-bottom: .5em"></div>
-                            <p style="text-align: center">Arrives in 1 minute</p>
-                        </div>
 
-                        <div style="text-align: center; margin: auto 1em auto auto; width: 20%">
-                            <p style="font-weight: bold">Walmart West</p>
-                            <p>7:03 am</p>
-                        </div>
-
+                    <div style="text-align: center; margin: 1em; width: 30%">
+                        <p style="font-weight: bold">6 175 Jefferson - Park Point - Province</p>
+                        <p>7:03 am</p>
                     </div>
                 </div>
             </div>
 
-            <div class="grow" style="margin: 1em; border: 1px solid black;">
-
-                <div class="row">
-                    <div style="width: 5%; background-color: var(--green); ">
-                        <p class="rotate-centered" style="font-size: large">On Duty</p>
-                    </div>
-
-                    <div style="width: 25%; background-color: var(--med-gray); text-align: center; display: flex; ">
-                        <h2 style="margin: auto">Off Campus Express</h2>
-                    </div>
-
-                    <div class="row" style="width: 70%;">
-                        <div style="text-align: center; margin: auto auto auto 1em; width: 20%">
-                            <p style="font-weight: bold">Wegmans West</p>
-                            <p>7:00 am</p>
-                        </div>
-
-
-                        <div style="background-color: var(--red);height:20%; width: 80%; margin: auto 1em; border: 1px solid black;">
-                            <div style="background-color: var(--green); height:100%;width:20%; margin-bottom: .5em"></div>
-                            <p style="text-align: center">Arrives in 1 minute</p>
-                        </div>
-
-                        <div style="text-align: center; margin: auto 1em auto auto; width: 20%">
-                            <p style="font-weight: bold">Walmart West</p>
-                            <p>7:03 am</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="grow" style="margin: 1em; border: 1px solid black;">
-
-                <div class="row">
-                    <div style="width: 5%; background-color: var(--red); ">
-                        <p class="rotate-centered" style="font-size: large">Off Duty</p>
-                    </div>
-
-                    <div style="width: 25%; background-color: var(--med-gray); text-align: center; ">
-                        <h2>Off Campus Express</h2>
-                    </div>
-
-                    <div style="width: 75%;">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="grow" style="margin: 1em; border: 1px solid black;">
-
-                <div class="row">
-                    <div style="width: 5%; background-color: var(--green); ">
-                        <p class="rotate-centered" style="font-size: large">On Duty</p>
-                    </div>
-
-                    <div style="width: 25%; background-color: var(--med-gray); text-align: center; display: flex; ">
-                        <h2 style="margin: auto">Off Campus Express</h2>
-                    </div>
-
-                    <div class="row" style="width: 70%;">
-                        <div style="text-align: center; margin: auto auto auto 1em; width: 20%">
-                            <p style="font-weight: bold">Wegmans West</p>
-                            <p>7:00 am</p>
-                        </div>
-
-
-                        <div style="background-color: var(--red);height:20%; width: 80%; margin: auto 1em; border: 1px solid black;">
-                            <div style="background-color: var(--green); height:100%;width:20%; margin-bottom: .5em"></div>
-                            <p style="text-align: center">Arrives in 1 minute</p>
-                        </div>
-
-                        <div style="text-align: center; margin: auto 1em auto auto; width: 20%">
-                            <p style="font-weight: bold">Walmart West</p>
-                            <p>7:03 am</p>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
-
-
+    </div>
 
 
         <div class="column" style="margin-top: .5em; margin-bottom: .5em;  border: 1px solid black;">
-        </div>
-
     </div>
 
 </main>

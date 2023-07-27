@@ -14,8 +14,7 @@ function getAllSemesterNames(){
 
 function loadAllRoutes(cache) {
     let routeTable = document.getElementById("route-table");
-
-    // console.assert(foo.length !== 0)
+    console.log(cache);
     cache.semesters[0].routes.forEach((route) => {
         // init new row
         let routeRow = document.createElement('tr');
@@ -60,13 +59,15 @@ function loadAllRoutes(cache) {
 
 }
 
-const CACHE = await reloadCache().then((cache) => {
-    console.log("Schedules Loaded");
-    console.log(cache);
-    loadAllRoutes(cache);
-    return cache;
-});
-console.log(CACHE);
+// const CACHE = await reloadCache()
+//     .then((cache) => {
+//     console.log("Schedules Loaded");
+//     console.log(cache);
+//     loadAllRoutes(cache);
+//     return cache;
+// });
+const CACHE = await reloadCache();
+loadAllRoutes(CACHE);
 
 
 

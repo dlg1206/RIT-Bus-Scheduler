@@ -168,7 +168,7 @@ export async function reloadCache() {
                 return {
                     "routeName": match[2],
                     "source": ROOT + match[1],
-                    "pngSource": ROOT + pngPath,
+                    "pngSource": (pngPath === null ? null : ROOT + pngPath),
                     "stops": stops
                 };
             })

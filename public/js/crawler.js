@@ -27,32 +27,30 @@ const REGEX = {
  * Applies Proxy Header and gets the HTML Code from the target url
  *
  * @param url target url
- * @returns {Promise<string>} HTML code as a String
+ * @returns HTML code as a String
  */
-async function getWebPageAsString(url){
+async function getHTMLString(url){
     // Fetch PROXY + target site
-    return await fetch( PROXY + url)
-        // 1. Check response was ok
-        .then( res => {
-            if (!res.ok)
-                throw Error(res.statusText);
-            // console.log("Url: " + PROXY + url + " | Status: " + res.status);
-            return res;
+    let response = await fetch(PROXY + url)
+        .then(  (response) => { return response; } )
+        // Couldn't access site
+        .catch( () => {
+            console.warn("Failed to get resource at " + url);
+            return null;
         })
-        // 2. Attempt to get HTML Text String
-        .then(async res => {
-            return await res.text();
+
+    // Return null if no response
+    if(response === null)
+        return null;
+
+    // Attempt to get HTML Text String
+    return await response.text()
+        .then(  (html) => { return html; } )
+        // Couldn't get HTML
+        .catch( () => {
+            console.warn("Failed to get html at " + url);
+            return null;
         })
-        // 3. Warn if string is bad
-        .then(string => {
-            if (string === "")
-                console.warn("Return is none; Page Request May be Bad");
-            return string;
-        })
-        // 4. Catch any Errors
-        .catch( (err) => {
-            throw Error(err)
-        });
 }
 
 
@@ -119,7 +117,7 @@ export async function reloadCache() {
     };
 
     // 1. Get All data
-    const shuttleHTML = await getWebPageAsString(ROOT + '/parking/campus-shuttles');
+    const shuttleHTML = await getHTMLString(ROOT + '/parking/campus-shuttles');
 
     // 2. Parse HTML and update Cache
     // Regex to isolate Shuttle Data
@@ -137,7 +135,7 @@ export async function reloadCache() {
                 let pngPath = null;
                 // Attempt to get Route Info
                 try {
-                    let routeHTML = await getWebPageAsString(ROOT + match[1]);  // get the Route Page
+                    let routeHTML = await getHTMLString(ROOT + match[1]);  // get the Route Page
 
                     // Get all the stops for the route
                     routeHTML.match(new RegExp(REGEX.STOP, "g")).forEach((match) => {
